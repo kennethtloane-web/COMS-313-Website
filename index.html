@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NWU Study Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="NWU Logo">
+            <h1>NWU Study Planner</h1>
+        </div>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="planner.html">Planner</a>
+            <a href="tips.html">Tips</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Helping NWU Students Study Smarter During Load Shedding</h2>
+        <p>
+            Manage your study schedule, receive smart study advice,
+            and access helpful student resources.
+        </p>
+
+        <button id="darkModeBtn">Toggle Dark Mode</button>
+    </section>
+
+    <!-- Load Shedding Advice -->
+    <main class="container">
+
+        <section class="card">
+            <h2>Select Current Load Shedding Stage</h2>
+
+            <label for="stage">Load Shedding Stage</label>
+
+            <select id="stage">
+                <option value="">-- Select Stage --</option>
+                <option value="1">Stage 1</option>
+                <option value="2">Stage 2</option>
+                <option value="3">Stage 3</option>
+                <option value="4">Stage 4+</option>
+            </select>
+
+            <p id="advice">Study advice will appear here.</p>
+        </section>
+
+        <!-- Study Timer -->
+        <section class="card">
+            <h2>Pomodoro Study Timer</h2>
+
+            <h3 id="timer">25:00</h3>
+
+            <div class="timer-buttons">
+                <button id="startBtn">Start</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 NWU Study Planner | COMS313 Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
